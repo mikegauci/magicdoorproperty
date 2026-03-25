@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import ConnectWallet from "../ConnectWallet/ConnectWallet";
 
 const Navbar = () => {
   const [navHeight, setNavHeight] = useState(false);
@@ -21,6 +22,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to={"/contact"}>CONTACT</Link>
+          </li>
+          <li>
+            <ConnectWallet />
           </li>
         </ul>
         <RxHamburgerMenu
